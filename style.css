@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.cabecalho-lista-item {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #000;
+  background-size: 400%;
+  color: #fff;
+  border: none;   
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+
+}
+ 
+.cabecalho-lista-item:hover::before {
+  transform: scaleX(1);
+}
+
+.cabecalho-lista-item-content {
+  position: relative;
+  z-index: 1;
+}
+
+.cabecalho-lista-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgb(54, 27, 97) 10.8%,
+    rgb(61, 15, 75)
+  );
+  transition: all 0.275s;
+}
+
+.cabecalho {
+  background-color:#0c0125;
+  color: rgb(231, 231, 231);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 10;
+}
+
+.cabecalho-imagem{
+  width: 10%;
+ margin: 100px 10;
+}
+.cabecalho-lista-item{
+  display: inline-flex;
+  margin: 0 16px;
+  font-size: 24px;
+
+}
+.cabecalho-lista-item :hover{
+color: rgb(89, 84, 94);
+text-decoration: underline;
+cursor: default;
+
+}
+#tecnico{
+  background-image: linear-gradient(black,#0c0125);
+  color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+}
+  .tecnico-titulo{
+padding: 40px;
+width: 1000%;
+font-size: 35px;
+  
+}
+.tecnico-div-conteudo{
+width: 37%;
+align-content: center;
+font-size: 28px;
+
+
+}
+.ilustra-curso{
+  height: 250px;
+}
+.body{
+
+font-family: 'aBeeZee', sans-serif;
+
+}
+.estudante-titulo {
+  text-align: center;
+  font-size: 24px;
+  padding: 0px;
+  background: linear-gradient(#0c0125,rgb(58, 16, 58),#0c0125 );
+  color:blanchedalmond;
+  cursor:default;
+  
+ }
+.estudante-imagem{
+height: 80px;
+
+
+}
+.estudante-icone{
+  width: 24px;
+  cursor: default;
+}
+
+.estudante-todos{
+color: rgb(186, 149, 196);
+background:linear-gradient(#0c0125, rgb(65, 33, 65), rgb(114, 67, 114));
+text-align: center;
+display: flex;
+justify-content: center;
+gap: 200px;
+cursor:copy ;
+}
+
+
+.rodape {
+  color: rgb(39, 28, 43);
+  background: linear-gradient(black,gray,black);
+  text-align: center;
+  padding:50px 0;
+}
+html{
+scroll-behavior: smooth;
+}
